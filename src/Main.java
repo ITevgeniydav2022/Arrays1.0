@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -44,6 +46,48 @@ public class Main {
         }
         System.out.println();
 
+        // Задание 3
+        System.out.println("Задание 3");
+        int[] arr3 = new int[3];
+        arr3[0] = 1;
+        arr3[1] = 2;
+        arr3[2] = 3;
+        for (int i = arr3.length - 1; i >= 0; i--) {
+            System.out.print(arr3[i]);
+            if (i != 0) {
+                System.out.print(", ");
+            }
+        }
+        System.out.println();
 
+        double[] arr4 = {1.57, 7.654, 9.986};
+        for (int i = arr4.length - 1; i >= 0; i--) {
+            System.out.print(arr4[i]);
+            if (i != 0) {
+                System.out.print(", ");
+            }
+        }
+        System.out.println();
+
+        char[] arr5 = {'a', 'b', 'c', 'd', 'e', 'f'};
+        for (int i = arr5.length - 1; i >= 0; i--) {
+            System.out.print(arr5[i]);
+            if (i != 0) {
+                System.out.print(", ");
+            }
+        }
+        System.out.println();
+
+        // Задание 4
+        System.out.println("Задание 4");
+        int[] arr6 = {1, 2, 3};
+
+        for (int i = 0; i < arr6.length; i++) {
+            if (arr6[i] % 2 != 0) {
+                arr6[i] += 1;
+            }
+        }
+
+        System.out.println(Arrays.toString(arr6));
     }
 }
